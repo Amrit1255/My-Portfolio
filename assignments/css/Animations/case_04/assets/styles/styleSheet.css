@@ -1,0 +1,144 @@
+/*!
+ * @author : Pasan Pahasara
+ * @since : 0.1.0
+ **/
+
+/**
+ * introducing body section overflow hidden.
+ */
+body {
+    overflow: hidden;
+}
+
+/**
+* added background sky image.
+*/
+main > div:first-child {
+    width: 100vw;
+    height: 80vh;
+    background: url("../img/sky.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+/**
+* customized section and introducing city animation.
+*/
+main > section:nth-child(2) {
+    width: max-content;
+    position: absolute;
+    height: 300px;
+    top: 290px;
+    animation-name: cityAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+/**
+* introducing city and road images display type flex.
+*/
+main > section:nth-child(2) > div {
+    display: flex;
+    width: max-content;
+    height: max-content;
+}
+
+/**
+* customized city image height.
+*/
+main > section:nth-child(2) > div:nth-child(1) {
+    height: 38vh;
+}
+
+/**
+* customized road image sizes.
+*/
+main > section:nth-child(2) > div:nth-child(2) {
+    height: 260px;
+    top: 200px;
+}
+
+/**
+* customized car image, position absolute and center.
+*/
+main > div:nth-child(3) > img {
+    width: 380px;
+    height: 180px;
+    top: 65vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+/**
+* customized car wheel div position absolute.
+*/
+main > div:nth-child(4) {
+    width: max-content;
+    height: 5px;
+    top: 36vh;
+    bottom: 0;
+    left: -11px;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+/**
+* customized div and introducing car wheel animation.
+*/
+main > div:nth-child(4) > img {
+    animation-name: carWheel;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-direction: alternate;
+}
+
+/**
+* customized car wheels sizes and positions.
+*/
+main > div:nth-child(4) > img:nth-child(1) {
+    width: 75px;
+    height: 75px;
+    margin-top: 100px;
+    margin-right: 155px;
+}
+
+/**
+* refactor car wheels.
+*/
+main > div:nth-child(4) > img:nth-child(2) {
+    width: 75px;
+    height: 75px;
+}
+
+
+/**
+* introducing city animations keyframes.
+*/
+@keyframes cityAnimation {
+    from {
+        margin-left: 0;
+    }
+    to {
+        margin-left: -270vw;
+    }
+}
+
+/**
+* introducing car wheel animations keyframes.
+*/
+@keyframes carWheel {
+    0% {
+        transform: rotate(0deg);
+
+    }
+    50% {
+        transform: rotate(-270deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

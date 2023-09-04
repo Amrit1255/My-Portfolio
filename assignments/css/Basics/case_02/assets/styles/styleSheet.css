@@ -1,0 +1,208 @@
+/*!
+ * @author : Pasan Pahasara
+ * @since : 0.1.0
+ **/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+/* Scrollbar
+   ========================================================================== */
+
+/**
+ * Customized Scrollbar.
+ */
+::-webkit-scrollbar {
+    width: 8px;
+    background: #3f3838;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4C0182;
+}
+
+/* Universal Selector
+   ========================================================================== */
+
+/**
+ * Added font-family and box-sizing.
+ */
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Header Section
+   ========================================================================== */
+
+header {
+    background: white;
+    box-shadow: 0px -1px 8px 2px #1c1717e8;
+    position: relative;
+    height: 73px;
+}
+
+/**
+ * Customized Images Position.
+ */
+header > img {
+    width: 190px;
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+
+/**
+ * Customized Navigations Position.
+ */
+header > nav {
+    position: absolute;
+    right: 40px;
+    top: 0;
+}
+
+/**
+ * Customized Navigations List.
+ */
+header > nav > ul > li {
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(46, 41, 41, 0.96);
+}
+
+/**
+ * Header Section Navigations Hover Effects.
+ */
+header > nav > ul > li:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/* Aside Section Customized Position.
+   ========================================================================== */
+body > main > aside {
+    width: 300px;
+    background: #4C0182;
+    position: absolute;
+    top: 73px;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/**
+ * Aside Section Customized Navigations Position.
+ */
+body > main > aside > nav > ul {
+    position: relative;
+    margin: 0;
+    padding-left: 20px;
+    padding-top: 30px;
+    color: white;
+}
+
+/**
+ * Aside Section Customized Navigations List.
+ */
+body > main > aside > nav > ul > li {
+    display: block;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/**
+ * Aside Section Customized Hover Effects.
+ */
+body > main > aside > nav > ul > li:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/* Section Customized Position.
+   ========================================================================== */
+body > main > section {
+    position: relative;
+    left: 300px;
+    right: 0;
+    bottom: 100px;
+    width: calc(100% - 305px);
+    line-height: 1.4;
+}
+
+/**
+ * Resize Image Width.
+ */
+body > main > section > section > img {
+    width: calc(100% / 3);
+}
+
+/**
+ * Customized Image Display Type.
+ */
+.image {
+    display: flex;
+    margin: 108px 5px 0px 10px;
+}
+
+/**
+ * Added Image Border.
+ */
+body > main > section > section > img:nth-child(1) {
+    border: 2px solid #5E490F;
+    border-right-color: #1C691E;
+    border-bottom-color: #1C691E;
+}
+
+body > main > section > section > img:nth-child(2) {
+    border: 2px solid #1C691E;
+    border-top-color: #5E490F;
+}
+
+body > main > section > section > img:nth-child(3) {
+    border: 2px solid #5E490F;
+    border-left-color: #1C691E;
+    border-bottom-color: #1C691E;
+}
+
+/**
+ * Customized Div Section Position.
+ */
+body > main > section > div {
+    position: relative;
+    margin-left: 10px;
+}
+
+/**
+ * Customized Footer.
+ */
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background-color: #808080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

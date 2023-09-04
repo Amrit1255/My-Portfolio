@@ -1,0 +1,109 @@
+/*!
+ * @author : Pasan Pahasara
+ * @since : 0.1.0
+ **/
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Bebas+Neue&family=Ubuntu:wght@300&display=swap');
+
+/* Universal Selector
+   ========================================================================== */
+
+/**
+ * Added font-family.
+ */
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Scrollbar
+   ========================================================================== */
+/**
+ * Customized Scrollbar.
+ */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/**
+ * Customized Section Position.
+ */
+body > section {
+    position: relative;
+    height: 100vh;
+}
+
+/**
+ * Customized Sticky Div Position.
+ */
+body > section > div {
+    position: sticky;
+    height: 60px;
+    top: 0;
+    z-index: 3;
+}
+
+/**
+ * Customized The h1 In The Div.
+ */
+body > section > div > h1 {
+    margin: auto;
+    padding: 10px 10px 10px 25px;
+    color: white;
+}
+
+/**
+ * Customized The h1 In The Section And Added Relative Position.
+ */
+body > section > h1 {
+    position: relative;
+    margin-top: 50vh;
+    text-align: center;
+    font-size: 150px;
+    transform: translate(0%, -50%);
+}
+
+/**
+ * Customized First Card Section Color.
+ */
+body > section:nth-child(1) {
+    background: #FFFFFF;
+}
+
+.div1 {
+    background: #FE351F;
+}
+
+/**
+ * Customized Second Card Section Color.
+ */
+body > section:nth-child(2) {
+    background: #58AEF3;
+}
+
+.div2 {
+    background: #004583;
+}
+
+/**
+ * Customized Third Card Section Color.
+ */
+body > section:nth-child(3) {
+    background: #5B554E;
+}
+
+.div3 {
+    background: #292925;
+}
+
+/**
+ * Customized Fourth Card Section Color.
+ */
+body > section:nth-child(4) {
+    background: #D93725;
+}
+
+.div4 {
+    background: #7C322A;
+}
+
+
+

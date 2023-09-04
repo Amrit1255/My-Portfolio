@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link href="assets/css/styles.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="d-flex container-fluid align-items-center justify-content-center" style="height: 98vh; width: 97vw">
+
+<!-- Calculator body -->
+<main class="rounded-5 opacity-75 shadow-lg p-2 bg-dark" style="height: 560px; width: 320px;">
+    <!--Display-->
+    <section class="d-flex h-50 flex-column align-items-center justify-content-evenly">
+        <div class="display h-25 w-100 d-flex align-items-end justify-content-end mt-5">
+            <p class="text-secondary mb-2 h1 w-100 text-end border-0 bg-dark p-2" id="history">
+        </div>
+        <div class="display h-25 w-100 d-flex align-items-end justify-content-end mt-1">
+            <p class="text-secondary mb-2 h1 w-100 text-end border-0 bg-dark p-2" id="result">
+        </div>
+
+        <!-- Logic Buttons -->
+        <aside class="row" style="height: max-content">
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <button class="rounded-circle shadow mathematicalLogics number">+</button>
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <button class="rounded-circle shadow mathematicalLogics number">-</button>
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <button class="rounded-circle shadow mathematicalLogics number">*</button>
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <button class="rounded-circle shadow mathematicalLogics number">/</button>
+            </div>
+        </aside>
+    </section>
+
+    <!-- Buttons Section -->
+    <section class="d-flex flex-row h-50 rounded-5 p-3 gap-4 shadow" id="buttons">
+
+        <!-- Number Buttons -->
+        <div class="d-flex flex-column">
+            <aside class="row h-25 justify-content-center">
+                <div class="col-4 d-flex align-items-center justify-content-center">
+                    <button class="rounded-circle buttons shadow number">7</button>
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center">
+                    <button class="rounded-circle buttons shadow number">8</button>
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center">
+                    <button class="rounded-circle buttons shadow number">9</button>
+                </div>
+
+            </aside>
+            <aside class="row h-25 justify-content-center">
+                <div class="col-4 d-flex align-items-center justify-content-center">
+                    <button class="rounded-circle buttons shadow number">4</button>
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center">
+                    <button class="rounded-circle buttons shadow number">5</button>
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center">
+                    <button class="rounded-circle buttons shadow number">6</button>
+                </div>
+
+            </aside>
+            <aside class="row h-25 justify-content-center">
+                <div class="col-4 d-flex align-items-center justify-content-center">
+                    <button class="rounded-circle buttons shadow number">1</button>
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center">
+                    <button class="rounded-circle buttons shadow number">2</button>
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center">
+                    <button class="rounded-circle buttons shadow number">3</button>
+                </div>
+
+            </aside>
+            <aside class="row h-25 justify-content-center">
+                <div class="col-4 d-flex align-items-center justify-content-center">
+                    <button class="rounded-circle buttons shadow number">0</button>
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center">
+                    <button class="rounded-circle buttons shadow number">.</button>
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center">
+                    <button class="rounded-circle buttons shadow" id="clearBtn">AC</button>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Equals Button -->
+        <div class="d-flex flex-column" style="margin-top: 5.8px">
+            <button class="rounded-5 equalsButton shadow" id="equalsBtn">=</button>
+        </div>
+
+    </section>
+</main>
+
+<!-- JS For Bootstrap -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+<script src="assets/jQuery/jquery-3.6.1.min.js"></script>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- JS Index -->
+<script src="assets/js/index.js"></script>
+</body>
+</html>
